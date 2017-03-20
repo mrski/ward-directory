@@ -1,31 +1,16 @@
 /**
  * Module dependencies.
  */
-var mongoose = require('mongoose')
-  , env = process.env.NODE_ENV || 'development'
-  , config = require('../../config/config')[env]
-  , Schema = mongoose.Schema;
+var env = process.env.NODE_ENV || 'development';
+var config = require('../../config/config')[env];
 
 /**
  * Article Schema
  */
 
-var ArticleSchema = new Schema({
-	created: {type : Date, default : Date.now},
-	title: {type: String, default: '', trim : true},
-	content: {type: String, default: '', trim : true},
-	user: {type : Schema.ObjectId, ref : 'User'}
-});
-
-
-/**
- * Statics
- */
-
-ArticleSchema.statics = {
-  load: function (id, cb) {
-    this.findOne({ _id : id }).populate('user').exec(cb);
-  }
+function Person(first, last, age, eyecolor) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eyecolor;
 };
-
-mongoose.model('Article', ArticleSchema);

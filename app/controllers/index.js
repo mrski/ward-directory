@@ -2,9 +2,8 @@
  * Module dependencies.
  */
 
-var mongoose = require('mongoose')
-  , async = require('async')
-  , _ = require('underscore')
+var async = require('async');
+var _ = require('underscore')
 
 
 exports.render = function(req, res){
