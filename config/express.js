@@ -29,8 +29,7 @@ module.exports = function (app, config) {
   app.set('view engine', 'html');
   app.set('layout', 'layouts/default');
   app.set('partials', {
-    header: "includes/header",
-    footer: "includes/footer"
+    header: "includes/header"
   });
 
   // enable jsonp

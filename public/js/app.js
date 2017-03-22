@@ -1,1 +1,0 @@
-window.app = angular.module('ward-directory', ['ngCookies', 'ngResource', 'ui.bootstrap']);

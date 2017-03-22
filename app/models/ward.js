@@ -5,7 +5,7 @@ var env = process.env.NODE_ENV || 'development';
 var config = require('../../config/config')[env];
 
 /**
- * Article Schema
+ * Directory Schema
  */
 
 function Person(first, last, age, eyecolor) {

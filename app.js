@@ -14,8 +14,6 @@ var fs = require('fs');
 // if test env, load example file
 var env = process.env.NODE_ENV || 'development';
 var config = require('./config/config')[env];
-var auth = require('./config/middlewares/authorization');
-
 
 // Bootstrap models
 var models_path = __dirname + '/app/models'
