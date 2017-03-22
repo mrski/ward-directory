@@ -1,5 +1,5 @@
 window.bootstrap = function () {
-    angular.bootstrap(document, ['MEAN']);
+    angular.bootstrap(document, ['ward-directory']);
 }
 
 window.init = function () {
